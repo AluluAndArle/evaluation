@@ -1,0 +1,141 @@
+@font-face {
+	font-family: "LiberationSans";
+	src: url("LiberationSans-Regular-webfont.ttf") format("truetype");
+}
+
+.container {
+	width: 1300px;
+	/* margin: 0 auto; */
+	background-color: #1c1c1c;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	font-family: "LiberationSans", sans-serif;
+	margin-left: 20%;
+	margin-right: 20%;
+	color: #353535;
+}
+
+nav {
+	background-color: white;
+	height: 30px;
+	width: 100%;
+	justify-content: space-between;
+	font-family: "LiberationSans", sans-serif;
+	margin-left: 19%;
+	/* text-align: center; */
+	color: #353535;
+	display: flex;
+	padding: 0;
+}
+
+#orangetext {
+	color: orange;
+}
+
+#bandeau {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+main {
+	/* margin-left: 19%; */
+	/* margin-right: 20%; */
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+.bg {
+	background-color: #1c1c1c;
+	height: 100em;
+}
+
+.box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin: 40px;
+	justify-content: center;
+}
+
+.img {
+	width: 100%;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+section div {
+	width: 37%; 
+	height: 25vw;
+	margin-left: 20%;
+}
+
+.footer {
+	height: 200px;
+	background-color: #373737;
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	margin: 0px 5px;
+}
+
+.footer ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 0%;
+}
+
+.ulstyle {
+	border-radius: 10px 10px 10px 10px;
+}
+
+.footerimg {
+	display: inline-block;
+	float: left;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1300px) {
+	
+    header {
+		display: inline;
+	}
+
+	header img {
+		align-items: center;
+	}
+    nav {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    main {
+        /* flex-wrap: wrap; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* width: 100%; */
+        /* margin: auto; */
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 100p;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}
